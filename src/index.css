@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+      :root {
+        --primary-bg: linear-gradient(135deg, #1e0533, #110a1f);
+        --accent-color: #8a2be2;
+        --text-color: #ffffff;
+        --text-secondary: #b3b3b3;
+        --gradient-1: linear-gradient(45deg, #726bff, #57b6fe);
+        --gradient-2: linear-gradient(45deg, #8a2be2, #4b0082);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        background: var(--primary-bg);
+        color: var(--text-color);
+        overflow-x: hidden;
+      }
+
+      .c-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
