@@ -38,7 +38,7 @@ const Navbar = () => {
              <div  >
                 <ul className="flex flex-wrap gap-6 items-center">                    
                     {
-                        navItems.map(item=> <li className=" cursor-pointer font-light transition-colors duration-300 ease-linear hover:text-[#8a2be2]" id={item.location} key={item}>{item.title}</li>)
+                        navItems.map(item=> <a href={`#${item.location}`} className="cursor-pointer font-light transition-colors duration-300 ease-linear hover:text-[#8a2be2]"   key={item}>{item.title}</a>)
                     }
                     <button className="bg-[linear-gradient(45deg,#726bff,#57b6fe)]  px-5  py-3 rounded-md">Login / Sign Up</button>
                 </ul>
