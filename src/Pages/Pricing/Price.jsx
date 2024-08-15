@@ -2,7 +2,7 @@ const Price = () => {
   return (
     <section
       id="price"
-      className="mt-20 dark:bg-[#1e293b] px-4 py-5 md:px-8 md:py-12 rounded-md border border-[#334155]"
+      className="mt-20 bg-[#341b4b0d] px-4 py-5 md:px-8 md:py-12 rounded-md border border-[#334155]"
       aria-labelledby="api-pricing-heading"
     >
       <div>

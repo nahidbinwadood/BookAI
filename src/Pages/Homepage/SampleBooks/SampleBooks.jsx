@@ -36,7 +36,7 @@ const SampleBooks = () => {
         {booksInfo.map((item, idx) => (
           <div
             key={idx}
-            className="px-6 lg:px-8 py-6 bg-[#ffffff0d] rounded-md text-center space-y-3 cursor-pointer transition duration-300 hover:-translate-y-2"
+            className="px-6 lg:px-8 py-6 bg-[#341b4b0d] rounded-md text-center space-y-3 cursor-pointer transition duration-300 hover:-translate-y-2"
             role="article"
             aria-labelledby={`book-title-${idx}`}
             aria-describedby={`book-description-${idx}`}

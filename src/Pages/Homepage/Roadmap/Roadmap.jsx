@@ -26,7 +26,7 @@ const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12"
+      className="mt-20 bg-[#341b4b0d] rounded-xl px-8 py-12"
       aria-labelledby="roadmap-heading"
     >
       <h2 id="roadmap-heading" className="text-center font-bold text-2xl">

@@ -12,7 +12,7 @@ const Footer = () => {
   ];
   return (
     <div
-      className="c-container border border-t-[#FFFFFF1A] border-x-0"
+      className="c-container border border-t-[#FFFFFF1A] border-x-0 border-b-0"
       aria-labelledby="footer-info"
     >
       <p id="footer-info" className="text-center pb-1">

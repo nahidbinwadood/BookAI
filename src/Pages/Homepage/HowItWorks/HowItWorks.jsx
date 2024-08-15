@@ -29,7 +29,7 @@ const HowItWorks = () => {
   return (
     <section
       id="howItWorks"
-      className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12"
+      className="mt-20 bg-[#341b4b0d] rounded-xl px-8 py-12"
       aria-labelledby="how-it-works-heading"
     >
       <h2 id="how-it-works-heading" className="text-center font-bold text-2xl">

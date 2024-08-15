@@ -16,7 +16,7 @@ const Review = () => {
         aria-describedby="user-feedback-description"
       >
         <div
-          className="bg-[#ffffff0d] p-6 rounded-lg"
+          className="bg-[#341b4b0d] p-6 rounded-lg"
           role="blockquote"
           aria-labelledby="user-feedback-1-author"
           aria-describedby="user-feedback-1-content"
@@ -29,7 +29,7 @@ const Review = () => {
           </h3>
         </div>
         <div
-          className="bg-[#ffffff0d] p-6 rounded-lg"
+          className="bg-[#341b4b0d] p-6 rounded-lg"
           role="blockquote"
           aria-labelledby="user-feedback-2-author"
           aria-describedby="user-feedback-2-content"
@@ -43,7 +43,7 @@ const Review = () => {
         </div>
       </div>
       <div
-        className="bg-[#ffffff0d] rounded-xl px-8 py-12 text-center mt-20"
+        className="bg-[#341b4b0d] rounded-xl px-8 py-12 text-center mt-20"
         aria-labelledby="stay-updated-heading"
       >
         <div>
