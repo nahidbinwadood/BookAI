@@ -27,21 +27,43 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <section id="howItWorks" className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12">
-      <h2 className="text-center font-bold text-2xl">How It Works</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+    <section
+      id="howItWorks"
+      className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12"
+      aria-labelledby="how-it-works-heading"
+    >
+      <h2 id="how-it-works-heading" className="text-center font-bold text-2xl">
+        How It Works
+      </h2>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10"
+        aria-describedby="how-it-works-description"
+      >
         {worksInfo.map((item, idx) => (
-          <div className="flex items-start gap-4" key={idx}>
-
+          <div
+            className="flex items-start gap-4"
+            key={idx}
+            role="article"
+            aria-labelledby={`work-item-title-${idx}`}
+            aria-describedby={`work-item-description-${idx}`}
+          >
             {/* icon */}
-            <div className="flex items-center justify-center p-3 md:p-4 bg-gradient-1 rounded-full">
+            <div
+              className="flex items-center justify-center p-3 md:p-4 bg-gradient-1 rounded-full"
+              aria-hidden="true"
+            >
               <item.icon className="size-6" />
             </div>
 
             {/* info */}
             <div>
-              <h2 className="text-xl font-bold pb-1">{item.title}</h2>
-              <p>{item.description}</p>
+              <h3
+                id={`work-item-title-${idx}`}
+                className="text-xl font-bold pb-1"
+              >
+                {item.title}
+              </h3>
+              <p id={`work-item-description-${idx}`}>{item.description}</p>
             </div>
           </div>
         ))}

@@ -16,8 +16,8 @@ const Homepage = () => {
            <Types/>
            <HowItWorks/>
            <SampleBooks/>
-           <Price/>
            <Roadmap/>
+           <Price/>
            <Review/>
         </section>
     );

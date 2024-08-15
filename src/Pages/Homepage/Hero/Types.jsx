@@ -23,17 +23,28 @@ const Types = () => {
     },
   ];
   return (
-    <section className="mt-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <section
+      className="mt-20 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+      aria-label="Types Section"
+    >
       {typesInfo.map((item, index) => (
-        <div className="space-y-5 transition duration-300 hover:-translate-y-4 cursor-pointer" key={index}>
+        <div
+          className="space-y-5 transition duration-300 hover:-translate-y-4 cursor-pointer"
+          key={index}
+          role="article"
+          aria-labelledby={`item-title-${index}`}
+          aria-describedby={`item-description-${index}`}
+        >
           <div className="flex items-center justify-center">
-            <div className="bg-gradient-2 p-4 rounded-full">
-              <item.icon className="size-7 " />
+            <div className="bg-gradient-2 p-4 rounded-full" aria-hidden="true">
+              <item.icon className="size-7" />
             </div>
           </div>
           <div className="text-center space-y-2">
-            <h2 className="text-xl font-bold">{item.title}</h2>
-            <p>{item.description}</p>
+            <h2 id={`item-title-${index}`} className="text-xl font-bold">
+              {item.title}
+            </h2>
+            <p id={`item-description-${index}`}>{item.description}</p>
           </div>
         </div>
       ))}

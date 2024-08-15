@@ -24,20 +24,48 @@ const Roadmap = () => {
     },
   ];
   return (
-    <section id="roadmap" className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12">
-      <h2 className="text-center font-bold text-2xl">Roadmap</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+    <section
+      id="roadmap"
+      className="mt-20 bg-[#ffffff0d] rounded-xl px-8 py-12"
+      aria-labelledby="roadmap-heading"
+    >
+      <h2 id="roadmap-heading" className="text-center font-bold text-2xl">
+        Roadmap
+      </h2>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10"
+        aria-describedby="roadmap-description"
+      >
         {roadMapInfo.map((item, idx) => (
-          <div className="flex items-start gap-4" key={idx}>
+          <div
+            key={idx}
+            className="flex items-start gap-4"
+            role="article"
+            aria-labelledby={`roadmap-item-title-${idx}`}
+            aria-describedby={`roadmap-item-description-${idx}`}
+          >
             {/* icon */}
-            <div className="flex items-center justify-center p-3 md:p-4 bg-gradient-1 rounded-full">
+            <div
+              className="flex items-center justify-center p-3 md:p-4 bg-gradient-1 rounded-full"
+              aria-hidden="true"
+            >
               <item.icon className="size-6" />
             </div>
 
             {/* info */}
             <div>
-              <h2 className=" text-lg md:text-xl font-bold pb-1">{item.title}</h2>
-              <p>{item.description}</p>
+              <h3
+                id={`roadmap-item-title-${idx}`}
+                className="text-lg md:text-xl font-bold pb-1"
+              >
+                {item.title}
+              </h3>
+              <p
+                id={`roadmap-item-description-${idx}`}
+                className="text-base md:text-lg"
+              >
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
